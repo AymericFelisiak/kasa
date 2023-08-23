@@ -1,0 +1,11 @@
+@use '../abstract/colors';
+
+.thumb {
+    display: flex;
+    flex-direction: column;
+    background-color: colors.$primary-color;
+    height: 340px;
+    width: 340px;
+
+    
+}

@@ -1,0 +1,19 @@
+@use "../abstract/colors";
+
+.tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    width: 115px;
+    height: 25px;
+    background-color: colors.$primary-color;
+    padding: 1px 20px 1px 20px;
+    width: fit-content;
+
+    p {
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+    }
+}

@@ -1,5 +1,6 @@
 @use 'abstract/variables';
 @use 'layout/header';
+@use 'components/tag';
 
 html {
     font-family: variables.$font;
