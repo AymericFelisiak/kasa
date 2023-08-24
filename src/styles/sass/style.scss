@@ -1,6 +1,7 @@
 @use 'abstract/variables';
 @use 'layout/header';
 @use 'components/tag';
+@use 'components/thumbnail';
 
 html {
     font-family: variables.$font;

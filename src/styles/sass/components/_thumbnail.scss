@@ -1,11 +1,21 @@
-@use '../abstract/colors';
+@use "../abstract/colors";
 
-.thumb {
-    display: flex;
-    flex-direction: column;
-    background-color: colors.$primary-color;
-    height: 340px;
+.thumbnail {
+	display: flex;
+	flex-direction: column;
+    justify-content: flex-end;
+	background-color: colors.$primary-color;
+	height: 340px;
     width: 340px;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
 
-    
+    .title {
+
+        h2 {
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+        }
+    }
 }
