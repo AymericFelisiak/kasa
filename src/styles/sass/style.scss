@@ -3,6 +3,7 @@
 @use 'components/tag';
 @use 'components/thumbnail';
 @use 'components/drop-down-list';
+@use 'components/banner';
 
 html {
     font-family: variables.$font;
