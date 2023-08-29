@@ -4,6 +4,7 @@
 @use 'components/thumbnail';
 @use 'components/drop-down-list';
 @use 'components/banner';
+@use 'pages/home';
 
 html {
     font-family: variables.$font;
