@@ -1,32 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Banner from '../../components/banner/Banner'
 import BannerImage from '../../images/home-banner-image.png'
 import Thumbnail from '../../components/thumbnail/Thumbnail'
+import data from '../../data/data.json'
 
 export default function Home() {
-    const test = {
-        "description": "Au coeur du quartier historique du Marais, cet appartement est idéal pour un couple à la découverte de Paris. Situé sur la rue de Rivoli, il est à 5 minutes du Louvre.",
-        "equipments": [
-        "Télévision",
-        "Four",
-        "Frigo",
-        "Hotte",
-        "Wi-fi",
-        "Micro-Ondes"
-    ]};
 
+    const [accomodationsData, setAccomodationsData] = useState(null);
+
+    useEffect(() => {
+        setAccomodationsData(data);
+    }, []);
     
     
     return (
         <main>
             <Banner url={BannerImage}/>
             <section class="grid-wrapper">
-                <Thumbnail />
-                <Thumbnail />
-                <Thumbnail />
-                <Thumbnail />
-                <Thumbnail />
-                <Thumbnail />
+                {accomodationsData && accomodationsData.map((acc) => {
+                    return <Thumbnail key={acc.id} data={acc} />
+                })}
             </section>
         </main>
     )
