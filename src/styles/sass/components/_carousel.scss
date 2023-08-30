@@ -67,4 +67,27 @@
         height: 100%;
         background: rgb(0, 0, 0, 0.2);
     }
+
+    
+}
+
+@media screen and (max-width: 767px) {
+
+    .carousel {
+        height: 335px;
+
+        .carousel-index {
+            display: none;
+        }
+    
+        .right-arrow {
+            width: 24px;
+            height: 24px;
+        }
+    
+        .left-arrow {
+            width: 24px;
+            height: 24px;
+        }
+    }
 }
