@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
+import Carousel from '../../components/carousel/Carousel';
 
 export default function Accomodation() {
 
@@ -9,7 +10,7 @@ export default function Accomodation() {
 
     return (
         <main>
-            <h1>Accomodation</h1>
+            <Carousel urls={state.pictures}/>
         </main>
     )
 }

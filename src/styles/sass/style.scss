@@ -2,9 +2,10 @@
 @use 'layout/header';
 @use 'components/tag';
 @use 'components/thumbnail';
-@use 'components/drop-down-list';
+@use 'components/drop-down';
 @use 'components/banner';
 @use 'pages/home';
+@use 'components/_carousel';
 
 html {
     font-family: variables.$font;
