@@ -1,0 +1,26 @@
+@use '../abstract/colors';
+
+.stars-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 200px;
+    height: 40px;
+    column-gap: 10px;
+    color: colors.$primary-color;
+
+    .fa-star {
+        width: 35px;
+        height: 35px;
+    }
+
+    .grey {
+        color: #E3E3E3;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .stars-wrapper {
+        justify-content: flex-start;
+    }
+}

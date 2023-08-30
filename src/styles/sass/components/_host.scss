@@ -1,0 +1,23 @@
+@use '../abstract/colors';
+
+.host-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 10px;
+
+    h2 {
+        color: colors.$primary-color;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: right;
+        width: min-content;
+    }
+
+    .picture-wrapper {
+        display: flex;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 65px;
+        height: 65px;
+    }
+}

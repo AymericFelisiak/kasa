@@ -6,6 +6,9 @@
 @use 'components/banner';
 @use 'pages/home';
 @use 'components/_carousel';
+@use 'pages/accomodation';
+@use 'components/host';
+@use 'components/star-rating';
 
 html {
     font-family: variables.$font;

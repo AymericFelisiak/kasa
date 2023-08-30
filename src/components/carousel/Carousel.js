@@ -8,8 +8,6 @@ import {
 export default function Carousel({ urls }) {
 	const [currentIndex, setCurrentIndex] = useState(0);
 
-	console.log(urls[currentIndex]);
-
 	const nextImage = () => {
 		const isLastImage = currentIndex === urls.length - 1;
 		const newIndex = isLastImage ? 0 : currentIndex + 1;
@@ -23,8 +21,7 @@ export default function Carousel({ urls }) {
 	};
 
 	return (
-		<div class="carousel">
-			
+		<section class="carousel">
 			<div class="image-wrapper">
 				<img src={urls[currentIndex]} alt=""></img>
 			</div>
@@ -35,8 +32,9 @@ export default function Carousel({ urls }) {
 			<div class="right-arrow" onClick={nextImage}>
 				<FontAwesomeIcon icon={faChevronRight} />
 			</div>
-			<div class="carousel-index">{currentIndex + 1}/{urls.length}</div>
-			
-		</div>
+			<div class="carousel-index">
+				{currentIndex + 1}/{urls.length}
+			</div>
+		</section>
 	);
 }

@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Tag(props) {
+export default function Tag( {name} ) {
 	return (
 		<div class="tag">
-			<p>{props.name}</p>
+			<p>{name}</p>
 		</div>
 	);
 }
