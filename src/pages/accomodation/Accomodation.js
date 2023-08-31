@@ -10,7 +10,7 @@ export default function Accomodation() {
 	const { state } = useLocation();
 
 	return (
-		<main>
+		<main class="accomodation-container">
 			<Carousel urls={state.pictures} />
 			<section class="informations-container">
 				<div class="title-location-tag-container">

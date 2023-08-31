@@ -1,0 +1,19 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    .drop-down-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about-container {
+        .drop-down-container {
+            row-gap: 15px;
+        }
+    }
+}

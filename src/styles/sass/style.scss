@@ -10,6 +10,7 @@
 @use 'components/host';
 @use 'components/star-rating';
 @use 'layout/footer';
+@use 'pages/about';
 
 html {
     font-family: variables.$font;
@@ -25,7 +26,7 @@ body {
     min-height: 100vh;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 768px) {
 
     header {
         margin: 30px 50px 0px 50px;
@@ -34,6 +35,18 @@ body {
     main {
         margin-left: 50px;
         margin-right: 50px;
+        margin: 50px 50px 50px 50px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 767px) {
+
+    header {
+        margin: 25px 25px 0px 25px;
+    }
+
+    main {
+        margin: 25px 25px 25px 25px
     }
 }
 
@@ -44,7 +57,6 @@ body {
     }
 
     main {
-        margin-left: 15px;
-        margin-right: 15px;
+        margin: 15px 15px 15px 15px;
     }
 }

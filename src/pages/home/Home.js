@@ -12,7 +12,7 @@ export default function Home() {
 	}, []);
 
 	return (
-		<main>
+		<main class="home-container">
 			<Banner url={BannerImage} />
 			<section class="grid-wrapper">
 				{accomodationsData &&

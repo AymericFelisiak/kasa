@@ -1,7 +1,6 @@
 @use "../abstract/colors";
 
 .drop-down-wrapper {
-	width: 50%;
 
 	.drop-down-header {
 		display: flex;
@@ -57,21 +56,20 @@
 	}
 }
 
-@media screen and (max-width: 1024px) {
-	.drop-down-wrapper {
-		width: 100%;
-	}
-}
-
 @media screen and (max-width: 767px) {
 	.drop-down-wrapper {
 		.drop-down-header {
-			padding-top: 0;
-			padding-bottom: 0;
+			padding-top: 5px;
+			padding-bottom: 5px;
 
 			h2 {
 				font-size: 13px;
 				line-height: 18px;
+			}
+
+			svg {
+				width: 18px;
+				height: 18px;
 			}
 		}
 
