@@ -5,6 +5,7 @@ import About from "./pages/about/About.js";
 import Error from "./pages/error/Error.js";
 import Accomodation from "./pages/accomodation/Accomodation.js";
 import Navbar from "./components/navbar/Navbar.js";
+import Footer from "./components/footer/Footer";
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 				<Route path="/error" element={<Error />} />
 				<Route path="/accomodation" element={<Accomodation />} />
 			</Routes>
+			<Footer />
 		</div>
 	);
 }

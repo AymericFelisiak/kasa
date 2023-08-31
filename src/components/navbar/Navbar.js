@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../images/logo.svg";
+import logo from "../../images/logo.svg";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
@@ -7,7 +7,7 @@ export default function Navbar() {
 		<header>
 			<nav>
 				<Link to="/" class="logo-wrapper">
-					<img src={Logo} alt="Kasa"></img>
+					<img src={logo} alt="Kasa"></img>
 				</Link>
 				<div class="link-wrapper">
 					<Link to="/">Accueil</Link>

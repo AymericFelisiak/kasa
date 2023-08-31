@@ -4,8 +4,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 200px;
-    height: 40px;
     column-gap: 10px;
     color: colors.$primary-color;
 
@@ -22,5 +20,11 @@
 @media screen and (max-width: 767px) {
     .stars-wrapper {
         justify-content: flex-start;
+        column-gap: 5px;
+
+        .fa-star {
+            width: 18px;
+            height: 18px;
+        }
     }
 }
