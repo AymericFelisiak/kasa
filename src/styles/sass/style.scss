@@ -11,6 +11,7 @@
 @use 'components/star-rating';
 @use 'layout/footer';
 @use 'pages/about';
+@use 'pages/error';
 
 html {
     font-family: variables.$font;
