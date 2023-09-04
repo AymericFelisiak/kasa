@@ -10,28 +10,28 @@ export default function Accomodation() {
 	const { state } = useLocation();
 
 	return (
-		<main class="accomodation-container">
+		<main className="accomodation-container">
 			<Carousel urls={state.pictures} />
-			<section class="informations-container">
-				<div class="title-location-tag-container">
-					<div class="title-wrapper">
-						<h2 class="title">{state.title}</h2>
+			<section className="informations-container">
+				<div className="title-location-tag-container">
+					<div className="title-wrapper">
+						<h2 className="title">{state.title}</h2>
 					</div>
-					<div class="location-wrapper">
-						<h3 class="location">{state.location}</h3>
+					<div className="location-wrapper">
+						<h3 className="location">{state.location}</h3>
 					</div>
-					<div class="tag-wrapper">
+					<div className="tag-wrapper">
 						{state.tags.map((tag) => {
 							return <Tag name={tag} />;
 						})}
 					</div>
 				</div>
-				<div class="host-rating-container">
+				<div className="host-rating-container">
                     <Host name={state.host.name} picture={state.host.picture}/>
                     <StarsRating rating={state.rating}/>
                 </div>
 			</section>
-            <section class="drop-down-container">
+            <section className="drop-down-container">
                 <DropDownList title="Description" content={state.description}/>
                 <DropDownList title="Équipements" content={state.equipments}/>
             </section>

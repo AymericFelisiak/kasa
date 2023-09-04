@@ -13,12 +13,12 @@ export default function Thumbnail({data}) {
 	}
 
 	return (
-		<div class="thumbnail" onClick={handleClick}>
-			<div class="image-wrapper">
+		<div className="thumbnail" onClick={handleClick}>
+			<div className="image-wrapper">
 				<img src={data.cover} alt={data.title}/>
 			</div>
-			<div class="overlay"></div>
-			<div class="title">
+			<div className="overlay"></div>
+			<div className="title">
                 <h2>{data.title}</h2>
             </div>
 		</div>

@@ -15,7 +15,7 @@ export default function StarsRating({ rating }) {
     }
 
 	return (
-		<div class="stars-wrapper">
+		<div className="stars-wrapper">
 			{stars.map(star => {
                 return star;
             })}

@@ -9,9 +9,9 @@ export default function Banner({ url }) {
 	}
 
 	return (
-		<section class="banner">
+		<section className="banner">
 			<img src={url} alt="Banière"></img>
-			<div class="overlay"></div>
+			<div className="overlay"></div>
 			{h1}
 		</section>
 	);

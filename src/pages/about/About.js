@@ -5,7 +5,7 @@ import DropDown from "../../components/drop-down/DropDown";
 
 export default function About() {
 	return (
-		<main class="about-container">
+		<main className="about-container">
 			<Banner url={BannerImage} />
 			<section class="drop-down-container">
 				<DropDown

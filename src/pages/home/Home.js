@@ -12,9 +12,9 @@ export default function Home() {
 	}, []);
 
 	return (
-		<main class="home-container">
+		<main className="home-container">
 			<Banner url={BannerImage} />
-			<section class="grid-wrapper">
+			<section className="grid-wrapper">
 				{accomodationsData &&
 					accomodationsData.map((acc) => {
 						return <Thumbnail key={acc.id} data={acc} />;

@@ -6,10 +6,10 @@ export default function Navbar() {
 	return (
 		<header>
 			<nav>
-				<Link to="/" class="logo-wrapper">
+				<Link to="/" className="logo-wrapper">
 					<img src={logo} alt="Kasa"></img>
 				</Link>
-				<div class="link-wrapper">
+				<div className="link-wrapper">
 					<Link to="/">Accueil</Link>
 					<Link to="/about">A Propos</Link>
 				</div>

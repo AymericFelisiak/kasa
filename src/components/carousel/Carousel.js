@@ -21,18 +21,18 @@ export default function Carousel({ urls }) {
 	};
 
 	return (
-		<section class="carousel">
-			<div class="image-wrapper">
+		<section className="carousel">
+			<div className="image-wrapper">
 				<img src={urls[currentIndex]} alt=""></img>
 			</div>
-			<div class="overlay"></div>
-			<div class="left-arrow" onClick={previousImage}>
+			<div className="overlay"></div>
+			<div className="left-arrow" onClick={previousImage}>
 				<FontAwesomeIcon icon={faChevronLeft} />
 			</div>
-			<div class="right-arrow" onClick={nextImage}>
+			<div className="right-arrow" onClick={nextImage}>
 				<FontAwesomeIcon icon={faChevronRight} />
 			</div>
-			<div class="carousel-index">
+			<div className="carousel-index">
 				{currentIndex + 1}/{urls.length}
 			</div>
 		</section>
