@@ -22,7 +22,7 @@ export default function Accomodation() {
 					</div>
 					<div className="tag-wrapper">
 						{state.tags.map((tag) => {
-							return <Tag name={tag} />;
+							return <Tag key={tag} name={tag} />;
 						})}
 					</div>
 				</div>

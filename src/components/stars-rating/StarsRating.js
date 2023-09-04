@@ -8,10 +8,9 @@ export default function StarsRating({ rating }) {
 
     for(let i = 0; i < 5; i++) {
         if(i < rating - 1) {
-            stars.push(<FontAwesomeIcon icon={faStar}/>);
+            stars.push(<FontAwesomeIcon key={`star ${i}`} icon={faStar}/>);
         }
-        else stars.push(<FontAwesomeIcon icon={faStar} className="grey"/>);
-        
+        else stars.push(<FontAwesomeIcon key={`star ${i}`} icon={faStar} className="grey"/>);
     }
 
 	return (

@@ -7,7 +7,7 @@ export default function DropDownList({ title, content }) {
     function createDOMContent() {
         if(Array.isArray(content)) {
             return content.map((equipment) => {
-                return <p>{equipment}</p>;
+                return <p key={equipment}>{equipment}</p>;
             });
         }
         return <p>{content}</p>

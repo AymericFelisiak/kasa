@@ -7,7 +7,7 @@ export default function About() {
 	return (
 		<main className="about-container">
 			<Banner url={BannerImage} />
-			<section class="drop-down-container">
+			<section className="drop-down-container">
 				<DropDown
 					title="Fiabilité"
 					content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
