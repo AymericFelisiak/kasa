@@ -8,6 +8,8 @@ import {
 export default function Carousel({ urls }) {
 	const [currentIndex, setCurrentIndex] = useState(0);
 
+	const onlyOneImage = (urls.length === 1) ? true : false;
+
 	const nextImage = () => {
 		const isLastImage = currentIndex === urls.length - 1;
 		const newIndex = isLastImage ? 0 : currentIndex + 1;
@@ -26,13 +28,13 @@ export default function Carousel({ urls }) {
 				<img src={urls[currentIndex]} alt=""></img>
 			</div>
 			<div className="overlay"></div>
-			<div className="left-arrow" onClick={previousImage}>
+			<div className={`left-arrow${onlyOneImage ? " hidden" : ""}`} onClick={previousImage}>
 				<FontAwesomeIcon icon={faChevronLeft} />
 			</div>
-			<div className="right-arrow" onClick={nextImage}>
+			<div className={`right-arrow${onlyOneImage ? " hidden" : ""}`} onClick={nextImage}>
 				<FontAwesomeIcon icon={faChevronRight} />
 			</div>
-			<div className="carousel-index">
+			<div className={`carousel-index${onlyOneImage ? " hidden" : ""}`}>
 				{currentIndex + 1}/{urls.length}
 			</div>
 		</section>
