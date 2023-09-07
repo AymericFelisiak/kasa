@@ -16,7 +16,7 @@ export default function DropDownList({ title, content }) {
     const [open, setOpen] = useState(false);
 
 	return (
-		<div className="drop-down-wrapper">
+		<div className={`drop-down-wrapper ${open? 'active' : 'inactive'}`}>
 			<div className={`drop-down-header ${open? 'active' : 'inactive'}`} onClick={() => {setOpen(!open)}}>
 				<h2>{title}</h2>
                 <FontAwesomeIcon icon={faChevronUp}/>
